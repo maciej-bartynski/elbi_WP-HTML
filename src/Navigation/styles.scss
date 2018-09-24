@@ -1,0 +1,23 @@
+#el0 {
+
+    .orange {
+        background: #ff9800;
+    }
+
+    .nav-wrapper {
+        @extend .orange
+    }
+
+    .sidenav {
+        background-color: #ff9800;
+
+        li {
+            width: 90%;
+            border-bottom: solid 1px rgb(255, 197, 110);
+            a{
+                color: rgb(255, 229, 190);
+            }
+        }
+    }
+
+}

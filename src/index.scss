@@ -1,0 +1,9 @@
+@import './scss/mixes.scss';
+@import './Navigation/styles.scss';
+@import './Header/styles.scss';
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}

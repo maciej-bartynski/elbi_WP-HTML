@@ -1,0 +1,1 @@
+Template do dostosowania do Wordpressa

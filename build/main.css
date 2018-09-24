@@ -1,0 +1,15 @@
+#el0 .orange, #el0 .nav-wrapper {
+  background: #ff9800; }
+
+#el0 .sidenav {
+  background-color: #ff9800; }
+  #el0 .sidenav li {
+    width: 90%;
+    border-bottom: solid 1px #ffc56e; }
+    #el0 .sidenav li a {
+      color: #ffe5be; }
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden; }
