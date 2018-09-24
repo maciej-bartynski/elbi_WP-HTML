@@ -1,13 +1,48 @@
-#el0 .orange, #el0 .nav-wrapper {
-  background: #ff9800; }
-
-#el0 .sidenav {
-  background-color: #ff9800; }
-  #el0 .sidenav li {
-    width: 90%;
-    border-bottom: solid 1px #ffc56e; }
-    #el0 .sidenav li a {
-      color: #ffe5be; }
+#el0 {
+  background-color: white; }
+  #el0 .orange {
+    background: #ff9800; }
+  #el0 .white, #el0 nav.top-nav-main {
+    background: #fff; }
+  #el0 nav.top-nav-main {
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0; }
+    #el0 nav.top-nav-main a {
+      color: #ff9800; }
+    #el0 nav.top-nav-main .el0_searchbar {
+      margin-left: 5px;
+      background: #ffaf36 i;
+        background-color: #ff9800; }
+    #el0 nav.top-nav-main .hid-el0_searchbar {
+      color: #fff; }
+  #el0 .sidenav {
+    background-color: #ff9800;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #el0 .sidenav li {
+      width: 90%;
+      border-bottom: solid 1px #ffc56e; }
+      #el0 .sidenav li a {
+        color: #ffe5be; }
+  #el0 i {
+    cursor: pointer; }
+  #el0 .el0_lang {
+    color: #aaa; }
+    #el0 .el0_lang span {
+      cursor: pointer; }
+  #el0 .elbi-nav-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: 6px; }
+  #el0 #show-el0_searchbar.hidden {
+    display: none; }
+  #el0 .el0_searchbar.hidden {
+    display: none;
+    margin-left: 0 !important; }
+  #el0 .el0_searchbar {
+    height: 64px; }
 
 body {
   margin: 0;
