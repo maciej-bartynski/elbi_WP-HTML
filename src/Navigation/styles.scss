@@ -1,16 +1,38 @@
 #el0 {
-
+    background-color: white;
     .orange {
         background: #ff9800;
     }
 
-    .nav-wrapper {
-        @extend .orange
+    .white {
+        background: #fff;
+    }
+
+    nav.top-nav-main {
+        padding: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+        a{
+            color: #ff9800;
+        }
+        .el0_searchbar{
+            margin-left: 5px;
+            background: rgb(255, 175, 54)
+            i {
+                color: #ff9800
+            }
+        }
+        .hid-el0_searchbar {
+            color: #fff;
+        }
+        @extend .white
     }
 
     .sidenav {
         background-color: #ff9800;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         li {
             width: 90%;
             border-bottom: solid 1px rgb(255, 197, 110);
@@ -20,4 +42,33 @@
         }
     }
 
+    i {
+        cursor: pointer;
+    }
+
+    .el0_lang {
+        color: #aaa;
+        span{
+            cursor: pointer;
+        }
+    }
+
+    .elbi-nav-logo {
+        height: 50px;
+        width: 50px;
+        margin-top: 6px;
+    }
+
+    #show-el0_searchbar.hidden{
+        display: none;
+    }
+
+    .el0_searchbar.hidden {
+        display: none;
+        margin-left: 0!important;
+    }
+
+    .el0_searchbar {
+        height: 64px;
+    }
 }

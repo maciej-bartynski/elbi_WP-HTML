@@ -18,41 +18,52 @@
 </head>
 
 <body>
-    <div class="navbar-fixed" id="el0">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Elbi</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Oferta</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Realizacje</a></li>
-                    <li><a href="#">Aktualności</a></li>
-                    <li><a href="#">Współpraca</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
+    <div id="el0">
+        <div class="navbar-fixed">        
+            <nav class="top-nav-main">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <img class="elbi-nav-logo" src="../images/logo_elbi_start.jpg" alt="Elbi"/>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Oferta</a></li>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Realizacje</a></li>
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Współpraca</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li class="el0_lang"><span>PL</span> / <span>EN</span> / <span>DE</span></li>
+                        <li style="height: 64px;" id="show-el0_searchbar">
+                            <a class="dropdown-trigger" href="#!"><i class="material-icons right">search</i></a>
+                        </li>
+                        <li class="el0_searchbar hidden">
+                            <form id="dropdow-to-show">
+                                <div class="input-field">
+                                    <input id="search" type="search" required>
+                                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                    <i class="material-icons hid-el0_searchbar">close</i>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
                 
-            </div>
-        </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Realizacje</a></li>
-            <li><a href="#">Aktualności</a></li>
-            <li><a href="#">Współpraca</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Oferta</a></li>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Realizacje</a></li>
+                <li><a href="#">Aktualności</a></li>
+                <li><a href="#">Współpraca</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
     </div>
 
-
-
-
-
     <header id="el1">
-        Header
         <div id="elbi-ilustracja-wrapper"></div>
     </header>
     <section id="el2">
@@ -75,7 +86,6 @@
     </section>
     <footer id="el8">foot</footer>
 
-    
 </body>
 
 </html>
