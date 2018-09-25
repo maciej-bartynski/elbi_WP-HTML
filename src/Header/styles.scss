@@ -71,6 +71,10 @@
             .positioner {
                 width: 45%;
                 height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
                 ul, h1, a {
                     color: #fff;
                 }
@@ -95,8 +99,34 @@
                             padding: 2% 10% 2% 10%;
                             text-align: center;
                             background-color: rgb(255, 175, 54);
-
                         };
+                    }
+                }
+            }
+            .el1_logo-main{
+                width: 15%;
+            }
+            .el1_slider-switch{
+                display: flex;
+                height: 100%;
+                align-items: flex-end;
+                justify-content: flex-end;
+                width: 40%;
+            }
+            .el1_slider-switch_list {
+                display: flex;
+                
+                li {
+                    margin-left: 5px;
+                    list-style: none;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 30px;
+                    border: solid 1px white;
+                    background: rgb(255, 175, 54);
+                    cursor: pointer;
+                    &.active {
+                        background-color: white;
                     }
                 }
             }
