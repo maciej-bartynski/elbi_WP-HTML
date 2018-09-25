@@ -71,3 +71,19 @@
 
     }
 }
+
+#el3_navswitcher--wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    .navswitcher {
+        border: 2px solid $orange!important;
+        .navswitcher_dot {
+            background-color: $orange!important;
+        }
+        .navswitcher_angle {
+            border-left: 2px solid $orange!important;
+            border-bottom: 2px solid $orange!important;
+        }
+    }
+}
