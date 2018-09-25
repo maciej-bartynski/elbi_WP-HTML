@@ -3,8 +3,8 @@ var tab=[];
 
 document.addEventListener('DOMContentLoaded', function(){
     positions = [];
-    wrapper = document.querySelector("#el1_slider-element");
-    images = document.querySelectorAll('.el1_image');
+    wrapper = document.querySelector("#elbi-slider--positioner");
+    images = document.querySelectorAll('.elbi-slider_image');
     for (let i=0;i<images.length;i++){
         images[i].style.left=100*i+'%';
         positions.push('-'+images[i].style.left);
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener('DOMContentLoaded', function(){   
     let iter = images.length;
-    var switcher = document.querySelector('.el1_slider-switch_list');
+    var switcher = document.querySelector('.elbi-switches');
     for(let i=0;i<iter;i++){
         createSwitchButton(i);
     }

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    let bg = document.querySelector('#elbi-ilustracja-wrapper');
+    let bg = document.querySelector('#elbi-canvas--wrapper');
     bg.innerHTML='<div id="animation_container" style="background-color:rgba(255, 149, 0, 1.00); width:874px; height:768px"><canvas id="canvas" width="874" height="768" style="position: absolute; display: block; background-color:rgba(255, 149, 0, 1.00);"></canvas><div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:874px; height:768px; position: absolute; left: 0px; top: 0px; display: block;"></div></div>';
 
     //skrypt animacji:

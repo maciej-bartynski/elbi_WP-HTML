@@ -1,0 +1,80 @@
+#el1 {
+    width: 100%;
+    overflow: hidden;
+
+    #el1--wrapper {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        box-sizing: border-box;
+
+        #elbi-canvas--wrapper {
+            box-sizing: border-box;
+            margin-right: -20%;
+            z-index: 2;
+            width: 60%;
+            -webkit-clip-path: polygon(0 0, 70% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 70% 0%, 100% 100%, 0 100%);
+            background-color: #ff9800;
+        }
+
+        #elbi-slider--wrapper {
+            box-sizing: border-box;
+            z-index: 1;
+            position: relative;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            overflow: hidden;
+
+            #elbi-slider--positioner {
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                top: 0;
+                left: 0;
+                width: 300%;
+                height: 100%;
+
+                .elbi-slider_image {
+                    width: 33.33%;
+                    height: 100%;
+                    transition: all 1000ms;
+                    background-position: center;
+                    background-size: cover;
+
+                    &:nth-of-type(1) {
+                        background-image: url('../images/photo-b.jpg');
+                    }
+
+                    &:nth-of-type(2) {
+                        background-image: url('../images/photo-d.jpg');
+                    }
+
+                    &:nth-of-type(3) {
+                        background-image: url('../images/photo-b.jpg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #el1 {
+        #el1--wrapper {
+            height: 100vh;
+            #elbi-canvas--wrapper {
+                display: none;
+            }
+
+            #elbi-slider--wrapper {
+                width: 100%;
+            }
+        }
+    }
+}
