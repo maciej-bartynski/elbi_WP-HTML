@@ -1,7 +1,110 @@
-#el3{
-    h1{
+@import './searcher.scss';
+
+#el3 {
+    h1 {
         width: 100%;
         text-align: center;
         color: $orange;
+    }
+
+    .el3--positioner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('./../images/elbi-logo-svg-03.svg');
+        background-position: center;
+        background-size: 30%;
+        background-repeat: no-repeat;
+
+        .el3-img--container {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 90%;
+                height: 45%;
+                border: gray 1px solid;
+            }
+        }
+
+        .el3--container {
+            width: 30%;
+
+            h3 {
+                text-align: left;
+                margin-top: 0;
+                padding-top: 0;
+            }
+
+            .button--orange {
+                margin-top: 40px;
+
+            }
+        }
+    }
+}
+
+.el3--positioner {
+    padding: 1%;
+
+    @media only screen and (min-width: 1000px) {
+        padding: 5% 5%;
+    }
+
+    @media only screen and (min-width:1200px) {
+        padding: 5% 15%;
+    }
+}
+
+#el3 {
+    .el3--positioner {
+        .el3-img--container {
+            @media only screen and (max-width: 1200px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 1000px) {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width:1200px) {
+            .el3--container {
+                width: 50%;
+
+                h3 {
+                    @media only screen and (max-width:1000px) {
+                        text-align: center;
+                    }
+                }
+
+                .button--orange {
+                    margin: 0 auto;
+                    margin-top: 40px;
+                }
+            }
+        }
+
+        @media only screen and (max-width:1000px) {
+            .el3--container {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (max-width:800px) {
+            .el3--container {
+                width: 100%;
+
+                .button--orange {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
